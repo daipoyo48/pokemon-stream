@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+.selector {
+  background: #efefef;
+  border: 2px solid #62aacb;
+  border-radius: 10px;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+
+.selector .input-wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.selector label {
+  display: flex;
+  flex-direction: column;
+}
+
+.selector label input[type="text"] {
+  font-size: 1em;
+  padding: 5px;
+  width: 100%;
+}
+
+.btn-wrapper {
+  margin: 2rem 0 0;
+}
+
+.view {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 50px auto;
+  width: 1000px;
+}
+
+.view-item {
+  display: grid;
+}
+
+.view-bg {
+  --bg: #efefef;
+  background: var(--bg);
+  border-radius: 50%;
+  height: 60%;
+  grid-area: 1/1;
+  margin: auto auto 0;
+  width: 80%;
+}
+.view-item[data-type="ノーマル"] .view-bg {
+  --bg: #c5c5c5;
+}
+.view-item[data-type="ほのお"] .view-bg {
+  --bg: #ffb774;
+}
+.view-item[data-type="みず"] .view-bg {
+  --bg: #81c5ff;
+}
+.view-item[data-type="でんき"] .view-bg {
+  --bg: #e4e94b;
+}
+.view-item[data-type="くさ"] .view-bg {
+  --bg: #7bcf87;
+}
+.view-item[data-type="こおり"] .view-bg {
+  --bg: #74d8ef;
+}
+.view-item[data-type="かくとう"] .view-bg {
+  --bg: #b97576;
+}
+.view-item[data-type="どく"] .view-bg {
+  --bg: #c780d3;
+}
+.view-item[data-type="じめん"] .view-bg {
+  --bg: #cf9e5c;
+}
+.view-item[data-type="ひこう"] .view-bg {
+  --bg: #9bc3ff;
+}
+.view-item[data-type="エスパー"] .view-bg {
+  --bg: #ff81a5;
+}
+.view-item[data-type="むし"] .view-bg {
+  --bg: #c7c159;
+}
+.view-item[data-type="いわ"] .view-bg {
+  --bg: #c3bea2;
+}
+.view-item[data-type="ゴースト"] .view-bg {
+  --bg: #6875d3;
+}
+.view-item[data-type="ドラゴン"] .view-bg {
+  --bg: #7b82f3;
+}
+.view-item[data-type="あく"] .view-bg {
+  --bg: #b56895;
+}
+.view-item[data-type="はがね"] .view-bg {
+  --bg: #9b9b9b;
+}
+.view-item[data-type="フェアリー"] .view-bg {
+  --bg: #ffbbff;
+}
+
+.view img {
+  display: block;
+  grid-area: 1/1;
+  margin: 0 auto;
+}
